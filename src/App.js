@@ -11,9 +11,8 @@ const Login = () => {
   };
 
   return (
-    <div className="w-full max-w-sm mx-auto mt-10 text-center">
-      <h1 className="block font-bold mb-2 text-gray-1500"> Login Challenge </h1>
-      <h2 className="block font-bold mb-2 text-gray-1000"> By Damián Barera </h2>
+    <div className="w-full max-w-sm mx-auto mt-10 text-center border-solid border-4 border-blue-400 rounded-md p-8">
+      <h1 className="block font-bold mb-2 text-gray-1500"> Liberty Commerce </h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block font-bold mb-2 text-gray-400" htmlFor="username">
@@ -39,9 +38,9 @@ const Login = () => {
             onChange={(event) => setPassword(event.target.value)}
           />
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center  bg-blue-400 font-bold py-2 px-4 rounded">
           <button
-            className="text-black hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="text-white"
             type="submit"
           >
             Iniciar sesión
